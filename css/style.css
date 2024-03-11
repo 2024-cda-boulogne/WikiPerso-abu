@@ -49,3 +49,8 @@
   .sticky + .content {
     padding-top: 60px;
   }
+
+  .gitCode {
+    background-color: rgb(212, 212, 212);
+    border: solid;
+  }

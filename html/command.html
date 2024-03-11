@@ -9,7 +9,7 @@
 <body>
 
     <div class="header">
-        <h2>Commandes Git</h2>
+        <h2>Commandes <br> Git</h2>
     </div>
     
     <div id="navbar">
@@ -20,7 +20,41 @@
 
     <div class="content">
         <h3>Les commandes Git</h3>
-        <p>A</p>
+        <h4>#1 git init</h4>
+        <p>
+            La commande git init nous permet de créer un nouveau référentiel Git. 
+            C'est la première commande pour démarrer un nouveau projet dans un référentiel GitHub. 
+            Allez dans le répertoire contenant vos fichiers de projet et exécutez la commande git init. 
+            Un sous-répertoire caché .git sera ajouté à celui-ci.
+        </p>
+        <div>
+            <p class="gitCode">$ git init</p>
+        </div>
+        <p>Vous pouvez également fournir un nom de référentiel avec la commande git init.</p>
+        <div>
+            <p class="gitCode">$ git init 'nom'</p>
+        </div>
+
+        <h4>#2 git clone</h4>
+        <p>
+            git clone crée une copie de travail locale du code source à partir d'un référentiel distant. 
+            Lorsque vous clonez un référentiel, le code sera automatiquement téléchargé sur votre machine.
+            Cette commande ajoutera l'emplacement d'origine en tant qu'emplacement distant afin que vous puissiez récupérer les modifications 
+            et y pousser des changements si vous avez l'autorisation.
+        </p>
+        <div>
+            <p class="gitCode">$ git clone 'url'</p>
+        </div>
+
+        <h4>#3 git branch</h4>
+        <p>
+            La commande git branch nous permet d'ajouter une nouvelle branche à une branche existante, 
+            de visualiser toutes les branches existantes et de supprimer une branche.
+        </p>
+        <div>
+            <p class="gitCode">$ git branch 'nom branch'</p>
+        </div>
+
     </div>
 
     <script defer type="module" src="/js/script.js"></script>
