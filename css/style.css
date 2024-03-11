@@ -54,3 +54,7 @@
     background-color: rgb(212, 212, 212);
     border: solid;
   }
+
+  p {
+    font-size: medium;
+  }

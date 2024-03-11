@@ -27,6 +27,7 @@
             Allez dans le répertoire contenant vos fichiers de projet et exécutez la commande git init. 
             Un sous-répertoire caché .git sera ajouté à celui-ci.
         </p>
+
         <div>
             <p class="gitCode">$ git init</p>
         </div>
@@ -42,6 +43,7 @@
             Cette commande ajoutera l'emplacement d'origine en tant qu'emplacement distant afin que vous puissiez récupérer les modifications 
             et y pousser des changements si vous avez l'autorisation.
         </p>
+
         <div>
             <p class="gitCode">$ git clone 'url'</p>
         </div>
@@ -51,8 +53,74 @@
             La commande git branch nous permet d'ajouter une nouvelle branche à une branche existante, 
             de visualiser toutes les branches existantes et de supprimer une branche.
         </p>
+
+        <p>
+            Créer une nouvelle branche localement :
+        </p>
         <div>
             <p class="gitCode">$ git branch 'nom branch'</p>
+        </div>
+        <p>
+            Lister toutes les branches locales et distantes :
+        </p>
+        <div>
+            <p class="gitCode">$ git branch -a</p>
+        </div>
+        <p>
+            Afficher toutes les branches et voir sur quelle branche vous travaillez actuellement :
+        </p>
+        <div>
+            <p class="gitCode">$ git branch ou $ git branch --list</p>
+        </div>
+        <p>
+            Supprimer une branche :
+        </p>
+        <div>
+            <p class="gitCode">$ git branch -d 'nom branch'</p>
+        </div>
+        <p>
+            Renommer une branche :
+        </p>
+        <div>
+            <p class="gitCode">git branch -m 'nom branch' 'nouveau nom branch'</p>
+        </div>
+
+        <h4>#4 git checkout</h4>
+        <p>
+            La commande git checkout nous permet de passer à une branche existante ou de créer et de passer à une nouvelle branche. 
+            Pour ce faire, la branche vers laquelle vous souhaitez passer doit être présente sur votre système local 
+            et les modifications dans votre branche actuelle doivent être validées ou mises de côté avant de procéder au changement. 
+            Vous pouvez également utiliser cette commande pour vérifier les fichiers.
+        </p>
+
+        <p>Passer à une branche existante :</p>
+        <div>
+            <p class="gitCode">git checkout 'nom branch'</p>
+        </div>
+        <p>Créer et passer à une nouvelle branche :</p>
+        <div>
+            <p class="gitCode">git checkout -b 'nom branch'</p>
+        </div>
+
+        <h4>#5 git add</h4>
+        <p>
+            La commande git add ajoute vos modifications dans un fichier à la zone de préparation où vous pouvez comparer votre version locale 
+            et la version dans le référentiel distant.
+            Avant de valider votre fichier nouvellement créé ou modifié, il doit être ajouté à la zone de préparation 
+            en utilisant la commande git add.
+        </p>
+
+        <p>Ajouter des fichiers spécifiques :</p>
+        <div>
+            <p class="gitCode">$ git add 'nom fichier 1' 'nom fichier 2'</p>
+        </div>
+        <p>Ajouter tous les fichiers nouveaux, modifiés et supprimés :</p>
+        <div>
+            <p class="gitCode">$ git add -A</p>
+        </div>
+        <p>Ajouter les fichiers modifiés et supprimés :</p>
+        <div>
+            <p class="gitCode">$ git add -u</p>
         </div>
 
     </div>
