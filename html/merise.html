@@ -79,26 +79,24 @@
         />
       </div>
 
-      <h4>#4 MLD (Modèle Logique des Données)</h4>
+      <h4>#4 MPD (Modèle Physique des Données)</h4>
       <p>
-        Le MLD ou Modèle Logique des Données est simplement la représentation textuelle du MPD. 
-        Il s’agit de la représentation en ligne du schéma représentant la structure de la base de données. 
-        Il n’y a pas de travail poussé à réaliser à cette étape, il s’agit juste d’appliquer quelques règles toutes simples.
+        L’étape de création du MPD est presque une formalité comparée à la création du MCD. 
+        En s’appuyant sur des règles simples (et qui fonctionnent à tous les coups), 
+        l’analyste fait évoluer sa modélisation de haut niveau pour la transformer en un schéma plus proche des contraintes 
+        des logiciels de bases de données. Il s’agit de préparer l’implémentation dans un SGBDR.
       </p>
       <p>
-        Le MLD est une étape de la méthodologie Merise. 
-        C’est une des dernières étapes proposée et elle permet d’implémenter la base de données en transcrivant le MCD/MPD 
-        en instructions SQL adaptées au SGBDR prévu. Concrètement, 
-        le MLD permet de connaître le nombre de tables ainsi que leurs contraintes (liaisons entre tables) 
-        à mettre en œuvre dans une base de données relationnelle.
+        Concrètement, 
+        cette étape permet de construire la structure finale de la base de données avec les différents liens entre les éléments qui la composent. 
       </p>
 
-      <p>Exemple d'un MLD' :</p>
+      <p>Exemple d'un MPD' :</p>
       <div>
         <img
           class="diagImg"
-          src="/image/merise/mld.jpg"
-          alt="mld"
+          src="/image/merise/mpd.jpg"
+          alt="mpd"
         />
       </div>
     </div>
