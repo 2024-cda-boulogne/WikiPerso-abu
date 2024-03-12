@@ -12,7 +12,7 @@ body {
 
 #navbar {
   overflow: hidden;
-  background-color: #333;
+  background-color: #002251;
 }
 
 #navbar a {
@@ -28,11 +28,6 @@ body {
 #navbar a:hover {
   background-color: #ddd;
   color: black;
-}
-
-#navbar a.active {
-  background-color: #04aa6d;
-  color: white;
 }
 
 .content {
@@ -52,6 +47,8 @@ body {
 .gitCode {
   background-color: rgb(212, 212, 212);
   border: solid;
+  border-color: black;
+  color: black;
 }
 
 p {
@@ -61,4 +58,58 @@ p {
 .diagImg {
   width: 100%;
   height: 100%;
+}
+
+.bouton {
+  float: center;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+
+
+main {
+  text-align: center;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+p {
+  text-align: left;
+  padding: 0 20px;
+}
+
+a {
+  text-align: left;
+  padding: 0 20px;
+}
+
+code {
+  color: firebrick;
+}
+
+.darkToggle {
+  appearance: none;
+  width: 30px;
+  height: 30px;
+  background: white;
+  border-radius: 5px;
+  border: 2px solid #555;
+}
+
+.darkToggle:checked {
+  background: #333;
+}
+
+.dark {
+  color: white;
+  background: #444;
+}
+
+.titre {
+  color: black;
 }
