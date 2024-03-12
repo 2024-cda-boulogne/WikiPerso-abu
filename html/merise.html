@@ -20,7 +20,108 @@
 
     <div class="content">
         <h3>Les méthodes MERISE</h3>
-        <p>A</p>
+        
+        <h4>#1 Dictionnaire des Données</h4>
+      <p>
+        Un diagramme de séquence est un diagramme UML (Unified
+        Modeling Language) qui représente la séquence de messages
+        entre les objets au cours d'une interaction. Un diagramme de
+        séquence comprend un groupe d'objets, représentés par des
+        lignes de vie, et les messages que ces objets échangent lors
+        de l'interaction. Les diagrammes de séquence représentent la
+        séquence de messages transmis entre des objets. Ils peuvent
+        également représenter les structures de contrôle entre des
+        objets.
+      </p>
+
+      <p>Exemple de Dictionnaire des Données :</p>
+      <div>
+        <img
+          class="diagImg"
+          src="/image/merise/ddd.jpg"
+          alt="ddd"
+        />
+      </div>
+
+      <h4>#2 Règle de Gestion</h4>
+      <p>
+        Une règle de gestion est une contrainte qui s'applique à une action, à une activité ou encore à un processus de l'entreprise.
+        Elle peut provenir de l'environnement ou être énoncée par l'entreprise 
+        et peut s'appliquer aux sous-systèmes opérant, de pilotage ou d'information. <br>
+        Si une règle de gestion s'applique à un élément du système d'information informatisé (SII), 
+        elle doit être transformée en une contrainteconcrète, sous sa forme informatisée, au sein dudit SII. <br>
+        Une règle de gestion est aussi nommée règle métier; la règle métier a une connotation plus orientée sous-système opérant mais, 
+        de prime abord, nous pouvons considérer les deux termes comme identiques.
+      </p>
+
+      <p>Exemple de Règle de Gestion :</p>
+      <div>
+        <img
+          class="diagImg"
+          src="/image/merise/rdg.jpeg"
+          alt="rdg"
+        />
+      </div>
+
+      <h4>#3 MCD (Modèle Conceptuel de Données)</h4>
+      <p>
+        Un modèle conceptuel de données (MCD) pour une base de données permet d’identifier les principales entités à représenter, 
+        leurs relations et leurs attributs, et d’analyser la structure conceptuelle du système d’information. 
+        Contrairement à un modèle logique de données (MLD) ou à un modèle physique de données (MPD), un MCD est plus abstrait.
+      </p>
+
+      <p>Exemple d'un MCD' :</p>
+      <div>
+        <img
+          class="diagImg"
+          src="/image/merise/mcd.jpg"
+          alt="mcd"
+        />
+      </div>
+
+      <h4>#4 MLD (Modèle Logique des Données)</h4>
+      <p>
+        Le MLD ou Modèle Logique des Données est simplement la représentation textuelle du MPD. 
+        Il s’agit de la représentation en ligne du schéma représentant la structure de la base de données. 
+        Il n’y a pas de travail poussé à réaliser à cette étape, il s’agit juste d’appliquer quelques règles toutes simples.
+      </p>
+      <p>
+        Le MLD est une étape de la méthodologie Merise. 
+        C’est une des dernières étapes proposée et elle permet d’implémenter la base de données en transcrivant le MCD/MPD 
+        en instructions SQL adaptées au SGBDR prévu. Concrètement, 
+        le MLD permet de connaître le nombre de tables ainsi que leurs contraintes (liaisons entre tables) 
+        à mettre en œuvre dans une base de données relationnelle.
+      </p>
+
+      <p>Exemple d'un MLD' :</p>
+      <div>
+        <img
+          class="diagImg"
+          src="/image/merise/mld.jpg"
+          alt="mld"
+        />
+      </div>
+
+      <h4>#5 MPD (Modèle Physique des Données)</h4>
+      <p>
+        L’étape de création du MPD est presque une formalité comparée à la création du MCD. 
+        En s’appuyant sur des règles simples (et qui fonctionnent à tous les coups), 
+        l’analyste fait évoluer sa modélisation de haut niveau pour la transformer en un schéma plus proche des contraintes 
+        des logiciels de bases de données. Il s’agit de préparer l’implémentation dans un SGBDR.
+      </p>
+      <p>
+        Concrètement, 
+        cette étape permet de construire la structure finale de la base de données avec les différents liens entre les éléments qui la composent. 
+      </p>
+
+      <p>Exemple d'un MPD' :</p>
+      <div>
+        <img
+          class="diagImg"
+          src="/image/merise/mpd.jpg"
+          alt="mpd"
+        />
+      </div>
     </div>
 
     <script defer type="module" src="/js/script.js"></script>
