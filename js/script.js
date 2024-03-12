@@ -12,3 +12,9 @@ function myFunction() {
     navbar.classList.remove('sticky');
   }
 }
+
+let darkToggle = document.querySelector('#darkToggle');
+
+darkToggle.addEventListener('change', ()=> {
+  document.body.classList.toggle('dark');
+})
