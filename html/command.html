@@ -147,6 +147,73 @@
             <p class="gitCode">$ git commit --amend -m “message commit"</p>
         </div>
 
+        <h4>#7 git push</h4>
+        <p>
+            git commit enregistre les modifications dans votre référentiel local. 
+            Chaque fois que vous validez vos modifications de code, vous devez inclure une brève description des changements effectués. 
+            Ce message de validation aide les autres à comprendre les modifications qui ont été apportées.
+        </p>
+
+        <div>
+            <p class="gitCode">$ git push or $ git push 'remote' 'nom branch'</p>
+        </div>
+        <p>
+            La commande git push envoie les modifications de fichiers validées du référentiel local vers le référentiel distant 
+            afin que d'autres puissent les utiliser. 
+            Elle créera également une branche nommée dans le référentiel distant si elle n'existe pas.
+        </p>
+        <div>
+            <p class="gitCode">$ git push --set-upstream 'remote' 'nom banch' ou git push -u origin 'nom branch'</p>
+        </div>
+
+        <h4>#8 git pull</h4>
+        <p>
+            git pull récupère les dernières modifications téléchargées depuis le serveur distant dans le référentiel local 
+            afin que vous puissiez disposer des dernières mises à jour de vos coéquipiers.
+        </p>
+
+        <div>
+            <p class="gitCode">$ git pull or $ git pull 'remote' ou $ git pull 'remote' 'nom branch'</p>
+        </div>
+
+        <h4>#9 git merge</h4>
+        <p>
+            La commande git merge fusionne votre branche avec la branche parente. 
+            La branche parente peut être soit une branche de développement, soit une branche principale (master) selon votre flux de travail.
+            Elle créera automatiquement une nouvelle validation s'il n'y a pas de conflits. 
+            Avant d'exécuter la commande git merge, vous devez vous trouver sur la branche spécifique que vous souhaitez fusionner avec votre branche parente.
+        </p>
+
+        <p>Passer à la branche dans laquelle vous souhaitez fusionner tout :</p>
+        <div>
+            <p class="gitCode">$ git checkout 'branch'</p>
+        </div>
+        <p>Commande pour récupérer les dernières mises à jour :</p>
+        <div>
+            <p class="gitCode">$ git pull ou $ git fetch</p>
+        </div>
+        <p>Fusionner votre branche :</p>
+        <div>
+            <p class="gitCode">$ git merge 'branch-name'</p>
+        </div>
+
+        <h4>#10 git status</h4>
+        <p>git status fournit un aperçu de l'état actuel de votre référentiel.</p>
+
+        <div>
+            <p class="gitCode">$ git status</p>
+        </div>
+
+        <p>Il renvoie les informations suivantes concernant votre branche :</p>
+        <p>
+            - Le nom de votre branche actuelle. <br>
+            - Si votre branche actuelle est à jour ou non. <br>
+            - Le nombre de validations que votre branche a en retard par rapport à sa branche distante. <br>
+            - Les modifications en attente d'être validées et commises. <br>
+            - Les modifications qui ne sont pas en attente de validation. <br>
+            - Les fichiers non suivis. <br>
+        </p>
+
     </div>
 
     <script defer type="module" src="/js/script.js"></script>
