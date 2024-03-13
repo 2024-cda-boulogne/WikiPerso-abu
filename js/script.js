@@ -1,11 +1,18 @@
+function dark() {
+  let element = document.body;
+  element.classList.toggle("dark-mode");
+}
+
+
+
 window.onscroll = function () {
-  myFunction();
+  nav();
 };
 
-var navbar = document.getElementById('navbar');
-var sticky = navbar.offsetTop;
+let navbar = document.getElementById('navbar');
+let sticky = navbar.offsetTop;
 
-function myFunction() {
+function nav() {
   if (window.pageYOffset >= sticky) {
     navbar.classList.add('sticky');
   } else {
@@ -13,13 +20,6 @@ function myFunction() {
   }
 }
 
-
-
-let darkToggle = document.querySelector('#darkToggle');
-
-darkToggle.addEventListener('change', ()=> {
-  document.body.classList.toggle('dark');
-})
 
 
 
