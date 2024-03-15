@@ -11,24 +11,46 @@
   </head>
   <body>
     <div class="header">
-      <h2 class="titre">Diagrammes <br> UML</h2>
+      <h2 class="titre color-0">Diagrammes <br> UML</h2>
     </div>
 
     <div id="navbar">
       <div class="bouton">
         <button id="myBtn" class="buttonAProp">À Propos</button>
-        <button onclick="dark()" class="buttonDark">Dark Mode</button>
-    </div>
+        <div class="switch-container">
+            <div id="switch" class="theme-switcher">
+                <input class="sun" type="checkbox" id="sun" />
+                <span class="moon"></span>
+            </div>
+        </div>
+      </div>
       <a href="command.html">Commandes</a>
       <a href="index.html">Acceuil</a>
       <a href="merise.html">MERISE</a>
     </div>
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close">&times;</span>
+          <h3>À Propos</h3>
+        </div>
+        <div class="modal-body">
+          <p class="color-0">Cette page vous permettra d'en savoir plus sur les différents diagrammes UML</p>
+          <h5 class="color-0">Qu'est qu'un Diagramme UML ?</h5>
+          <p class="color-0">
+            Un diagramme UML est un moyen de visualiser des systèmes et des logiciels à l'aide du langage de modélisation unifié (UML). 
+            Les ingénieurs logiciels créent des diagrammes UML pour comprendre la conception, 
+            l'architecture du code et la mise en œuvre proposée de systèmes logiciels complexes. 
+          </p>
+        </div>
+      </div>
+  </div>
 
     <div class="content">
-      <h3>Les diagrammes UML</h3>
+      
 
-      <h4>#1 Diagramme de Séquence</h4>
-      <p>
+      <h4 class="color-0">#1 Diagramme de Séquence</h4>
+      <p class="color-0">
         Un diagramme de séquence est un diagramme UML (Unified
         Modeling Language) qui représente la séquence de messages
         entre les objets au cours d'une interaction. Un diagramme de
@@ -39,7 +61,7 @@
         également représenter les structures de contrôle entre des
         objets.
       </p>
-      <p>
+      <p class="color-0">
         Par exemple, les lignes de vie dans un diagramme de séquence
         pour un scénario de banque peuvent représenter un client, un
         guichetier ou un responsable d'agence. Les communications
@@ -49,7 +71,7 @@
         objets.
       </p>
 
-      <p>Exemple de Diagramme de Séquence :</p>
+      <p class="color-0">Exemple de Diagramme de Séquence :</p>
       <div>
         <img
           class="diagImg"
@@ -58,8 +80,8 @@
         />
       </div>
 
-      <h4>#2 Diagramme de Cas d'Utilisation</h4>
-      <p>
+      <h4 class="color-0">#2 Diagramme de Cas d'Utilisation</h4>
+      <p class="color-0">
         Les diagrammes de cas d'utilisation (DCU) sont des diagrammes
         UML utilisés pour une représentation du comportement
         fonctionnel d'un système logiciel. Ils sont utiles pour des
@@ -72,7 +94,7 @@
         acteurs (actors), et ils apparaissent dans les cas
         d'utilisation.
       </p>
-      <p>
+      <p class="color-0">
         Ils permettent de décrire l'interaction entre l'acteur et le
         système. L'idée forte est de dire que l'utilisateur d'un
         système logiciel a un objectif quand il utilise le système !
@@ -90,7 +112,7 @@
         maîtrise d'œuvre (MOE).
       </p>
 
-      <p>Exemple de Diagramme de Cas d'Utilisation :</p>
+      <p class="color-0">Exemple de Diagramme de Cas d'Utilisation :</p>
       <div>
         <img
           class="diagImg"
@@ -99,8 +121,8 @@
         />
       </div>
 
-      <h4>#3 Diagramme d'Activité</h4>
-      <p>
+      <h4 class="color-0">#3 Diagramme d'Activité</h4>
+      <p class="color-0">
         Un diagramme d'activité fournit une vue du comportement d'un système en décrivant la séquence d'actions d'un processus. 
         Les diagrammes d'activité sont similaires aux organigrammes de traitement de l'information, 
         car ils montrent les flux entre les actions dans une activité. Les diagrammes d'activité peuvent, cependant, 
@@ -108,14 +130,14 @@
         Dans les diagrammes d'activité, vous utilisez des noeuds d'activité et des bords d'activité pour modéliser le flux de commande 
         et de données entre les actions.
       </p>
-      <p>Les diagrammes d'activité sont utiles dans les phases suivantes d'un projet :</p>
-      <p>
+      <p class="color-0">Les diagrammes d'activité sont utiles dans les phases suivantes d'un projet :</p>
+      <p class="color-0">
         - Avant de démarrer un projet, vous pouvez créer des diagrammes d'activité pour modéliser les principaux flux de travaux. <br>
         - Pendant la phase d'exigences, vous pouvez créer des diagrammes d'activité pour illustrer le flux d'événements décrit dans les cas d'utilisation. <br>
         - Pendant les phases d'analyse et de conception, vous pouvez utiliser des diagrammes d'activité pour faciliter la définition du comportement des opérations.
       </p>
 
-      <p>Exemple de Diagramme d'Activité</p>
+      <p class="color-0">Exemple de Diagramme d'Activité</p>
       <div>
         <img
           class="diagImg"
@@ -124,8 +146,8 @@
         />
       </div>
 
-      <h4>#4 Diagramme de Déploiement</h4>
-      <p>
+      <h4 class="color-0">#4 Diagramme de Déploiement</h4>
+      <p class="color-0">
         les diagrammes de déploiement modélisent l'architecture physique d'un système. 
         Les diagrammes de déploiement affichent les relations entre les composants logiciels et matériels du système, d'une part, 
         et la distribution physique du traitement, d'autre part.
@@ -136,15 +158,15 @@
         ainsi que d'autres périphériques qui prennent en charge l'environnement d'exécution d'un système. 
         Les chemins de communication et les relations de déploiement modélisent les connexions dans le système.
       </p>
-      <p>Les diagrammes de déploiement sont efficaces pour visualiser, définir et documenter les types de systèmes suivants :</p>
-      <p>
+      <p class="color-0">Les diagrammes de déploiement sont efficaces pour visualiser, définir et documenter les types de systèmes suivants :</p>
+      <p class="color-0">
         - Les systèmes embarqués qui utilisent du matériel commandé par des stimulations externes, par exemple un affichage commandé par les changements de température <br>
         - Les systèmes client-serveur qui distinguent généralement entre l'interface utilisateur et les données rémanentes d'un système <br>
         - Les systèmes répartis qui comportent plusieurs serveurs et peuvent héberger plusieurs versions d'artefacts logiciels, dont certaines pourraient même migrer d'un noeud à un autre
     
       </p>
 
-      <p>Exemple de Diagramme de Déploiement</p>
+      <p class="color-0">Exemple de Diagramme de Déploiement</p>
       <div>
         <img
           class="diagImg"
@@ -153,31 +175,31 @@
         />
       </div>
 
-      <h4>#5 Diagramme de Classe</h4>
-      <p>
+      <h4 class="color-0">#5 Diagramme de Classe</h4>
+      <p class="color-0">
         Le diagramme de classes est un schéma utilisé en génie logiciel pour présenter les classes 
         et les interfaces des systèmes ainsi que leurs relations. 
         Ce diagramme fait partie de la partie statique d'UML, ne s'intéressant pas aux aspects temporels et dynamiques.</p>
-      <p>
+      <p class="color-0">
         Une classe décrit les responsabilités, le comportement et le type d'un ensemble d'objets. 
         Les éléments de cet ensemble sont les instances de la classe. 
       </p>
-      <p>
+      <p class="color-0">
         Une classe est un ensemble de fonctions et de données (attributs) qui sont liées ensemble par un champ sémantique. 
         Les classes sont utilisées dans la programmation orientée objet. 
         Elles permettent de modéliser un programme et ainsi de découper une tâche complexe en plusieurs petits travaux simples. 
       </p>
-      <p>
+      <p class="color-0">
         Les classes peuvent être reliées grâce au mécanisme d'héritage qui permet de mettre en évidence des relations de parenté. 
         D'autres relations sont possibles entre des classes, représentées par un arc spécifique dans le diagramme de classes. 
       </p>
-      <p>
+      <p class="color-0">
         Elles sont finalement instanciées pour créer des objets (une classe est un moule à objet : <br>
         elle décrit les caractéristiques des objets, les objets contiennent leurs valeurs propres pour chacune de ces caractéristiques 
         lorsqu'ils sont instanciés). 
       </p>
 
-      <p>Exemple de Diagramme de Classe</p>
+      <p class="color-0">Exemple de Diagramme de Classe</p>
       <div>
         <img
           class="diagImg"

@@ -9,13 +9,18 @@
 <body>
 
     <div class="header">
-        <h2 class="titre">Commandes <br> Git</h2>
+        <h2 class="titre color-0">Commandes <br> Git</h2>
     </div>
     
     <div id="navbar">
         <div class="bouton">
             <button id="myBtn" class="buttonAProp">À Propos</button>
-            <button onclick="dark()" class="buttonDark">Dark Mode</button>
+            <div class="switch-container">
+                <div id="switch" class="theme-switcher">
+                    <input class="sun" type="checkbox" id="sun" />
+                    <span class="moon"></span>
+                </div>
+            </div>
         </div>
         <a href="index.html">Acceuil</a>
         <a href="diagram.html">Diagrammes</a>
@@ -28,15 +33,20 @@
             <h3>À Propos</h3>
           </div>
           <div class="modal-body">
-            <p class="textAPropos">Cette page vous permettra d'en savoir plus sur les commandes Git les plus utilisées</p>
+            <p class="color-0">Cette page vous permettra d'en savoir plus sur les commandes Git les plus utiles</p>
+            <h5 class="color-0">Qu'est qu'une Commande Git ?</h5>
+            <p class="color-0">
+              Il s’agit de commandes de développement qui aide une équipe de développeurs 
+              à gérer les changements apportés au code source au fil du temps.
+            </p>
           </div>
         </div>
     </div>
 
     <div class="content">
-        <h3>Les commandes Git</h3>
-        <h4>#1 git init</h4>
-        <p>
+        
+        <h4 class="color-0">#1 git init</h4>
+        <p class="color-0">
             La commande git init nous permet de créer un nouveau référentiel Git. 
             C'est la première commande pour démarrer un nouveau projet dans un référentiel GitHub. 
             Allez dans le répertoire contenant vos fichiers de projet et exécutez la commande git init. 
@@ -44,15 +54,15 @@
         </p>
 
         <div>
-            <p class="gitCode">$ git init</p>
+            <p class="gitCode borderDark">$ git init</p>
         </div>
-        <p>Vous pouvez également fournir un nom de référentiel avec la commande git init.</p>
+        <p class="color-0">Vous pouvez également fournir un nom de référentiel avec la commande git init.</p>
         <div>
-            <p class="gitCode">$ git init 'nom'</p>
+            <p class="gitCode borderDark">$ git init 'nom'</p>
         </div>
 
-        <h4>#2 git clone</h4>
-        <p>
+        <h4 class="color-0">#2 git clone</h4>
+        <p class="color-0">
             git clone crée une copie de travail locale du code source à partir d'un référentiel distant. 
             Lorsque vous clonez un référentiel, le code sera automatiquement téléchargé sur votre machine.
             Cette commande ajoutera l'emplacement d'origine en tant qu'emplacement distant afin que vous puissiez récupérer les modifications 
@@ -60,167 +70,167 @@
         </p>
 
         <div>
-            <p class="gitCode">$ git clone 'url'</p>
+            <p class="gitCode borderDark">$ git clone 'url'</p>
         </div>
 
-        <h4>#3 git branch</h4>
-        <p>
+        <h4 class="color-0">#3 git branch</h4>
+        <p class="color-0">
             La commande git branch nous permet d'ajouter une nouvelle branche à une branche existante, 
             de visualiser toutes les branches existantes et de supprimer une branche.
         </p>
 
-        <p>
+        <p class="color-0">
             Créer une nouvelle branche localement :
         </p>
         <div>
-            <p class="gitCode">$ git branch 'nom branch'</p>
+            <p class="gitCode borderDark">$ git branch 'nom branch'</p>
         </div>
-        <p>
+        <p class="color-0">
             Lister toutes les branches locales et distantes :
         </p>
         <div>
-            <p class="gitCode">$ git branch -a</p>
+            <p class="gitCode borderDark">$ git branch -a</p>
         </div>
-        <p>
+        <p class="color-0">
             Afficher toutes les branches et voir sur quelle branche vous travaillez actuellement :
         </p>
         <div>
-            <p class="gitCode">$ git branch ou $ git branch --list</p>
+            <p class="gitCode borderDark">$ git branch ou $ git branch --list</p>
         </div>
-        <p>
+        <p class="color-0">
             Supprimer une branche :
         </p>
         <div>
-            <p class="gitCode">$ git branch -d 'nom branch'</p>
+            <p class="gitCode borderDark">$ git branch -d 'nom branch'</p>
         </div>
-        <p>
+        <p class="color-0">
             Renommer une branche :
         </p>
         <div>
-            <p class="gitCode">git branch -m 'nom branch' 'nouveau nom branch'</p>
+            <p class="gitCode borderDark">git branch -m 'nom branch' 'nouveau nom branch'</p>
         </div>
 
-        <h4>#4 git checkout</h4>
-        <p>
+        <h4 class="color-0">#4 git checkout</h4>
+        <p class="color-0">
             La commande git checkout nous permet de passer à une branche existante ou de créer et de passer à une nouvelle branche. 
             Pour ce faire, la branche vers laquelle vous souhaitez passer doit être présente sur votre système local 
             et les modifications dans votre branche actuelle doivent être validées ou mises de côté avant de procéder au changement. 
             Vous pouvez également utiliser cette commande pour vérifier les fichiers.
         </p>
 
-        <p>Passer à une branche existante :</p>
+        <p class="color-0">Passer à une branche existante :</p>
         <div>
-            <p class="gitCode">git checkout 'nom branch'</p>
+            <p class="gitCode borderDark">$ git checkout 'nom branch'</p>
         </div>
-        <p>Créer et passer à une nouvelle branche :</p>
+        <p class="color-0">Créer et passer à une nouvelle branche :</p>
         <div>
-            <p class="gitCode">git checkout -b 'nom branch'</p>
+            <p class="gitCode borderDark">$ git checkout -b 'nom branch'</p>
         </div>
 
-        <h4>#5 git add</h4>
-        <p>
+        <h4 class="color-0">#5 git add</h4>
+        <p class="color-0">
             La commande git add ajoute vos modifications dans un fichier à la zone de préparation où vous pouvez comparer votre version locale 
             et la version dans le référentiel distant.
             Avant de valider votre fichier nouvellement créé ou modifié, il doit être ajouté à la zone de préparation 
             en utilisant la commande git add.
         </p>
 
-        <p>Ajouter des fichiers spécifiques :</p>
+        <p class="color-0">Ajouter des fichiers spécifiques :</p>
         <div>
-            <p class="gitCode">$ git add 'nom fichier 1' 'nom fichier 2'</p>
+            <p class="gitCode borderDark">$ git add 'nom fichier 1' 'nom fichier 2'</p>
         </div>
-        <p>Ajouter tous les fichiers nouveaux, modifiés et supprimés :</p>
+        <p class="color-0">Ajouter tous les fichiers nouveaux, modifiés et supprimés :</p>
         <div>
-            <p class="gitCode">$ git add -A</p>
+            <p class="gitCode borderDark">$ git add -A</p>
         </div>
-        <p>Ajouter les fichiers modifiés et supprimés :</p>
+        <p class="color-0">Ajouter les fichiers modifiés et supprimés :</p>
         <div>
-            <p class="gitCode">$ git add -u</p>
+            <p class="gitCode borderDark">$ git add -u</p>
         </div>
 
-        <h4>#6 git commit</h4>
-        <p>
+        <h4 class="color-0">#6 git commit</h4>
+        <p class="color-0">
             git commit enregistre les modifications dans votre référentiel local. 
             Chaque fois que vous validez vos modifications de code, vous devez inclure une brève description des changements effectués. 
             Ce message de validation aide les autres à comprendre les modifications qui ont été apportées.
         </p>
 
-        <p>Valider tous les fichiers ajoutés avec la commande git add et les fichiers qui ont été modifiés depuis lors :</p>
+        <p class="color-0">Valider tous les fichiers ajoutés avec la commande git add et les fichiers qui ont été modifiés depuis lors :</p>
         <div>
-            <p class="gitCode">$ git commit -a </p>
+            <p class="gitCode borderDark">$ git commit -a </p>
         </div>
-        <p>Valider les fichiers avec un message :</p>
+        <p class="color-0">Valider les fichiers avec un message :</p>
         <div>
-            <p class="gitCode">$ git commit -m “message commit”</p>
+            <p class="gitCode borderDark">$ git commit -m “message commit”</p>
         </div>
-        <p>Vous pouvez remplacer les deux commandes précédentes par la commande suivante :</p>
+        <p class="color-0">Vous pouvez remplacer les deux commandes précédentes par la commande suivante :</p>
         <div>
-            <p class="gitCode">$ git commit -am “message commit”</p>
+            <p class="gitCode borderDark">$ git commit -am “message commit”</p>
         </div>
-        <p>Modifier la dernière validation avec les dernières modifications comme une nouvelle validation :</p>
+        <p class="color-0">Modifier la dernière validation avec les dernières modifications comme une nouvelle validation :</p>
         <div>
-            <p class="gitCode">$ git commit --amend -m “message commit"</p>
+            <p class="gitCode borderDark">$ git commit --amend -m “message commit"</p>
         </div>
 
-        <h4>#7 git push</h4>
-        <p>
+        <h4 class="color-0">#7 git push</h4>
+        <p class="color-0">
             git commit enregistre les modifications dans votre référentiel local. 
             Chaque fois que vous validez vos modifications de code, vous devez inclure une brève description des changements effectués. 
             Ce message de validation aide les autres à comprendre les modifications qui ont été apportées.
         </p>
 
         <div>
-            <p class="gitCode">$ git push or $ git push 'remote' 'nom branch'</p>
+            <p class="gitCode borderDark">$ git push or $ git push 'remote' 'nom branch'</p>
         </div>
-        <p>
+        <p class="color-0">
             La commande git push envoie les modifications de fichiers validées du référentiel local vers le référentiel distant 
             afin que d'autres puissent les utiliser. 
             Elle créera également une branche nommée dans le référentiel distant si elle n'existe pas.
         </p>
         <div>
-            <p class="gitCode">$ git push --set-upstream 'remote' 'nom banch' ou git push -u origin 'nom branch'</p>
+            <p class="gitCode borderDark">$ git push --set-upstream 'remote' 'nom banch' ou git push -u origin 'nom branch'</p>
         </div>
 
-        <h4>#8 git pull</h4>
-        <p>
+        <h4 class="color-0">#8 git pull</h4>
+        <p class="color-0">
             git pull récupère les dernières modifications téléchargées depuis le serveur distant dans le référentiel local 
             afin que vous puissiez disposer des dernières mises à jour de vos coéquipiers.
         </p>
 
         <div>
-            <p class="gitCode">$ git pull ou $ git pull 'remote' ou $ git pull 'remote' 'nom branch'</p>
+            <p class="gitCode borderDark">$ git pull ou $ git pull 'remote' ou $ git pull 'remote' 'nom branch'</p>
         </div>
 
-        <h4>#9 git merge</h4>
-        <p>
+        <h4 class="color-0">#9 git merge</h4>
+        <p class="color-0">
             La commande git merge fusionne votre branche avec la branche parente. 
             La branche parente peut être soit une branche de développement, soit une branche principale (master) selon votre flux de travail.
             Elle créera automatiquement une nouvelle validation s'il n'y a pas de conflits. 
             Avant d'exécuter la commande git merge, vous devez vous trouver sur la branche spécifique que vous souhaitez fusionner avec votre branche parente.
         </p>
 
-        <p>Passer à la branche dans laquelle vous souhaitez fusionner tout :</p>
+        <p class="color-0">Passer à la branche dans laquelle vous souhaitez fusionner tout :</p>
         <div>
-            <p class="gitCode">$ git checkout 'branch'</p>
+            <p class="gitCode borderDark">$ git checkout 'branch'</p>
         </div>
-        <p>Commande pour récupérer les dernières mises à jour :</p>
+        <p class="color-0">Commande pour récupérer les dernières mises à jour :</p>
         <div>
-            <p class="gitCode">$ git pull ou $ git fetch</p>
+            <p class="gitCode borderDark">$ git pull ou $ git fetch</p>
         </div>
-        <p>Fusionner votre branche :</p>
+        <p class="color-0">Fusionner votre branche :</p>
         <div>
-            <p class="gitCode">$ git merge 'branch-name'</p>
-        </div>
-
-        <h4>#10 git status</h4>
-        <p>git status fournit un aperçu de l'état actuel de votre référentiel.</p>
-
-        <div>
-            <p class="gitCode">$ git status</p>
+            <p class="gitCode borderDark">$ git merge 'branch-name'</p>
         </div>
 
-        <p>Il renvoie les informations suivantes concernant votre branche :</p>
-        <p>
+        <h4 class="color-0">#10 git status</h4>
+        <p class="color-0">git status fournit un aperçu de l'état actuel de votre référentiel.</p>
+
+        <div>
+            <p class="gitCode borderDark">$ git status</p>
+        </div>
+
+        <p class="color-0">Il renvoie les informations suivantes concernant votre branche :</p>
+        <p class="color-0">
             - Le nom de votre branche actuelle. <br>
             - Si votre branche actuelle est à jour ou non. <br>
             - Le nombre de validations que votre branche a en retard par rapport à sa branche distante. <br>

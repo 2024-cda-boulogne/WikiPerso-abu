@@ -7,9 +7,11 @@ body {
 
 .header {
   background: var(--bg-1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 30px;
-  text-align: center;
-  height: 70vh;
+  height: 71vh;
 }
 
 #navbar {
@@ -65,27 +67,45 @@ p {
 }
 
 .bouton {
-  float: center;
-  display: block;
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
   color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
+  padding: 10px 20px; 
 }
+
+.titre {
+  text-align: center;
+}
+
+
+
+
+
+
 
 [data-theme='light'] {
   --bg-0: #ffffff;
   --bg-1: #d6d5d5;
+  --bg-2: #fefefe;
   --color-0: #000000;
   --color-1: #737373;
+  --border: #000000;
 }
 
 [data-theme='dark'] {
   --bg-0: #202020;
   --bg-1: #000000;
+  --bg-2: #202020;
   --color-0: #ededed;
   --color-1: #a8a8a8;
+  --border: #ffffff;;
+}
+
+.borderDark {
+  border-color: var(--border);
 }
 
 .color-0 {
@@ -104,6 +124,7 @@ p {
   border-radius: 9999px;
   filter: none;
   transition: all 0.25s ease;
+  
 }
 
 input {
@@ -130,8 +151,8 @@ input {
   top: 50%;
   left: 80%;
   transform: translate(-50%, -50%);
-  width: 3.5rem;
-  height: 3.5rem;
+  width: 3.1rem;
+  height: 3.1rem;
   border-radius: 9999px;
   background-color: rgb(0, 0, 0);
   transition: all 0.25s ease;
@@ -154,6 +175,11 @@ a {
   text-underline-offset: 2px;
 }
 
+
+
+
+
+
 .modal {
   display: none;
   position: fixed;
@@ -170,7 +196,7 @@ a {
 
 .modal-content {
   position: relative;
-  background-color: #fefefe;
+  background: var(--bg-2);
   margin: auto;
   padding: 0;
   border: 1px solid #888;
