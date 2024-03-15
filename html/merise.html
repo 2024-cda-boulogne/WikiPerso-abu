@@ -8,25 +8,45 @@
 </head>
 <body>
 
-    <div class="header">
+    <div class="header color-0">
         <h2 class="titre">Méthode <br> MERISE</h2>
     </div>
     
     <div id="navbar">
-        <div class="bouton">
-            <input type="checkbox" id="darkToggle" class="darkToggle" name="Dark Mode[]" value="Dark Mode">
-            <label for="darkToggle">
+      <div class="bouton">
+        <button id="myBtn" class="buttonAProp">À Propos</button>
+        <div class="switch-container">
+            <div id="switch" class="theme-switcher">
+                <input class="sun" type="checkbox" id="sun" />
+                <span class="moon"></span>
+            </div>
         </div>
+      </div>
         <a href="command.html">Commandes</a>
         <a href="diagram.html">Diagrammes</a>
         <a href="index.html">Acceuil</a>
     </div>
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close">&times;</span>
+          <h3>À Propos</h3>
+        </div>
+        <div class="modal-body">
+          <p class="color-0">Cette page vous permettra d'en savoir plus sur toutes les méthodes Merise</p>
+          <h5 class="color-0">Qu'est que la Méthode Merise ?</h5>
+          <p class="color-0">
+            C'est une méthode de conception des systèmes d'information créée dans les années 70 par une équipe de chercheurs
+            encore très utilisée aujourd'hui pour la conception des bases de données.
+          </p>
+        </div>
+      </div>
+  </div>
 
     <div class="content">
-        <h3>Les méthodes MERISE</h3>
         
-        <h4>#1 Dictionnaire des Données</h4>
-      <p>
+        <h4 class="color-0">#1 Dictionnaire des Données</h4>
+      <p class="color-0">
         Un diagramme de séquence est un diagramme UML (Unified
         Modeling Language) qui représente la séquence de messages
         entre les objets au cours d'une interaction. Un diagramme de
@@ -38,7 +58,7 @@
         objets.
       </p>
 
-      <p>Exemple de Dictionnaire des Données :</p>
+      <p class="color-0">Exemple de Dictionnaire des Données :</p>
       <div>
         <img
           class="diagImg"
@@ -47,8 +67,8 @@
         />
       </div>
 
-      <h4>#2 Règle de Gestion</h4>
-      <p>
+      <h4 class="color-0">#2 Règle de Gestion</h4>
+      <p class="color-0">
         Une règle de gestion est une contrainte qui s'applique à une action, à une activité ou encore à un processus de l'entreprise.
         Elle peut provenir de l'environnement ou être énoncée par l'entreprise 
         et peut s'appliquer aux sous-systèmes opérant, de pilotage ou d'information. <br>
@@ -58,7 +78,7 @@
         de prime abord, nous pouvons considérer les deux termes comme identiques.
       </p>
 
-      <p>Exemple de Règle de Gestion :</p>
+      <p class="color-0">Exemple de Règle de Gestion :</p>
       <div>
         <img
           class="diagImg"
@@ -67,14 +87,14 @@
         />
       </div>
 
-      <h4>#3 MCD (Modèle Conceptuel de Données)</h4>
-      <p>
+      <h4 class="color-0">#3 MCD (Modèle Conceptuel de Données)</h4>
+      <p class="color-0">
         Un modèle conceptuel de données (MCD) pour une base de données permet d’identifier les principales entités à représenter, 
         leurs relations et leurs attributs, et d’analyser la structure conceptuelle du système d’information. 
         Contrairement à un modèle logique de données (MLD) ou à un modèle physique de données (MPD), un MCD est plus abstrait.
       </p>
 
-      <p>Exemple d'un MCD' :</p>
+      <p class="color-0">Exemple d'un MCD' :</p>
       <div>
         <img
           class="diagImg"
@@ -83,13 +103,13 @@
         />
       </div>
 
-      <h4>#4 MLD (Modèle Logique des Données)</h4>
-      <p>
+      <h4 class="color-0">#4 MLD (Modèle Logique des Données)</h4>
+      <p class="color-0">
         Le MLD ou Modèle Logique des Données est simplement la représentation textuelle du MPD. 
         Il s’agit de la représentation en ligne du schéma représentant la structure de la base de données. 
         Il n’y a pas de travail poussé à réaliser à cette étape, il s’agit juste d’appliquer quelques règles toutes simples.
       </p>
-      <p>
+      <p class="color-0">
         Le MLD est une étape de la méthodologie Merise. 
         C’est une des dernières étapes proposée et elle permet d’implémenter la base de données en transcrivant le MCD/MPD 
         en instructions SQL adaptées au SGBDR prévu. Concrètement, 
@@ -97,7 +117,7 @@
         à mettre en œuvre dans une base de données relationnelle.
       </p>
 
-      <p>Exemple d'un MLD' :</p>
+      <p class="color-0">Exemple d'un MLD' :</p>
       <div>
         <img
           class="diagImg"
@@ -106,19 +126,19 @@
         />
       </div>
 
-      <h4>#5 MPD (Modèle Physique des Données)</h4>
-      <p>
+      <h4 class="color-0">#5 MPD (Modèle Physique des Données)</h4>
+      <p class="color-0">
         L’étape de création du MPD est presque une formalité comparée à la création du MCD. 
         En s’appuyant sur des règles simples (et qui fonctionnent à tous les coups), 
         l’analyste fait évoluer sa modélisation de haut niveau pour la transformer en un schéma plus proche des contraintes 
         des logiciels de bases de données. Il s’agit de préparer l’implémentation dans un SGBDR.
       </p>
-      <p>
+      <p class="color-0">
         Concrètement, 
         cette étape permet de construire la structure finale de la base de données avec les différents liens entre les éléments qui la composent. 
       </p>
 
-      <p>Exemple d'un MPD' :</p>
+      <p class="color-0">Exemple d'un MPD' :</p>
       <div>
         <img
           class="diagImg"

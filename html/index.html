@@ -9,25 +9,41 @@
 <body>
 
     <div class="header">
-        <h2 class="titre">Bienvenue sur <br> mon Wiki Perso</h2>
+        <h2 class="titre color-0">Bienvenue sur <br> mon Wiki Perso</h2>
     </div>
     
     <div id="navbar" >
         <div class="bouton">
-            <input type="checkbox" id="darkToggle" class="darkToggle" name="Dark Mode[]" value="Dark Mode">
-            <label for="darkToggle">
+            <button id="myBtn" class="buttonAProp">À Propos</button>
+            <div class="switch-container">
+                <div id="switch" class="theme-switcher">
+                    <input class="sun" type="checkbox" id="sun" />
+                    <span class="moon"></span>
+                </div>
+            </div>
         </div>
         <a href="command.html">Commandes</a>
         <a href="diagram.html">Diagrammes</a>
         <a href="merise.html">MERISE</a>
     </div>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+          <div class="modal-header">
+            <span class="close">&times;</span>
+            <h3>À Propos</h3>
+          </div>
+          <div class="modal-body">
+            <p class="color-0">Ce pop up vous serviera à obtenir des infos suplémentaires sur le sujet de la page choisi</p>
+          </div>
+        </div>
+    </div>
 
-    <div class="content">
+    <div class="content color-0">
         <h3>Pourquoi un Wiki perso ?</h3>
         <p>Le Wiki perso était le premier brief à réaliser pendant la formation Simplon Web Dev de 2024</p>
     </div>
 
-    <div class="content">
+    <div class="content color-0">
         <h3>A quoi sert ce Wiki Perso ?</h3>
         <p>Le Wiki a pour but de servir de répertoire pour les commandes Git les plus importantes et les plus utilisé.</p> 
         <p>Il sert aussi à rappeller comment faire et lire des Diagrammes UML.</p> 
@@ -35,7 +51,7 @@
         </p>
     </div>
 
-    <div class="content">
+    <div class="content color-0">
         <h3>Par qui a été fait ce Wiki Perso ?</h3>
         <p>Il a été créé par moi, Alex BUFFET, apprenant chez Simplon</p>
         <p>Voici mes réseaux sur lesquel vous pouvez me contacter :</p>
