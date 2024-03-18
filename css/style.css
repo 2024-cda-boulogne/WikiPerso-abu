@@ -1,3 +1,14 @@
+:root {
+  --bg-0: #ffffff;
+  --bg-1: #d6d5d5;
+  --bg-2: #fefefe;
+  --bg-dark: #202020;
+  --text-light: #000000;
+  --text-medium: #737373;
+  --text-dark: #ededed;
+  --border-color: #000000;
+}
+
 body {
   background: var(--bg-0);
   margin: 0;
@@ -27,7 +38,7 @@ body {
   color: #f2f2f2;
   text-align: center;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 15px;
 }
 
 #navbar a:hover {
@@ -63,8 +74,7 @@ p {
 }
 
 .diagImg {
-  width: 100%;
-  height: 100%;
+  width: 50vh;
 }
 
 .bouton {
@@ -78,9 +88,31 @@ p {
 }
 
 .titre {
-  text-align: center;
+  font-size: 32px;
+  line-height: 1.2;
 }
 
+.headerHeader {
+  display: flex;
+  align-items: center;
+  background-color: #002251;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 7vh;
+  margin: 4px 2px;
+}
+
+.imgSimplon {
+  width: 6vh;
+  height: 6vh;
+  margin-right: auto;
+}
+
+.headerHeaderTitre {
+  color: #ffffff;
+  margin-left: auto;
+}
 
 
 
@@ -267,18 +299,17 @@ a {
 }
 
 .buttonAProp {
-  background-color: #696969;
-  border: solid;
-  border-color: black;
-  border-radius: 8px;
-  color: white;
-  padding: 15px 32px;
-  text-align: left;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
+  background-color: #505050;
+    border: none;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.buttonAProp:hover {
+  background-color: #b9b9b9;
 }
 
 .buttonDark {
@@ -300,3 +331,10 @@ a {
 
 
 
+.cadre {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+}
