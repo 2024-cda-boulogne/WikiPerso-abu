@@ -16,13 +16,21 @@ body {
   font-family: 'Comic Sans MS', Kanit;
 }
 
-.header {
+.intro {
   background: var(--bg-1);
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 30px;
-  height: 71vh;
+  height: 50vh;
+}
+
+.separation {
+  height: 2px;
+  text-align: center;
+  padding: 2px 0;
+  overflow: hidden;
+  background-color: #002251;
 }
 
 #navbar {
